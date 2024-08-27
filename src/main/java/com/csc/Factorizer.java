@@ -4,6 +4,7 @@ public class Factorizer {
 
   // You should implement your solution here.
   // Feel free to delete this example method when you implement your solution.
+  
   public String primeListGeneration(int primeFactors)
   {
     // As per instructions, program returns null if entry is equal to or less than 1
@@ -30,7 +31,7 @@ public class Factorizer {
         }
       }
       // Checks if primeFactors is now 0 and then begins to build returnString
-      if (primeFactors == 0)
+      if (primeFactors == 1)
       {
         String returnString = Integer.toString(primeStack.pop());
         while(!primeStack.isEmpty())
