@@ -46,7 +46,23 @@ public class TestFactorizer {
   }
 
   @Test
-  public void test400() {
-    assertEquals("5x5x2x2x2x2", factorizer.primeListGeneration(400));
+  public void isPrime17() {
+    assertEquals(true, factorizer.isPrime(17));
   }
+
+  @Test
+  public void isPrime27() {
+    assertEquals(false, factorizer.isPrime(27));
+  }
+
+  @Test
+  public void isPrime13() {
+    assertEquals(true, factorizer.isPrime(13));
+  }
+
+  @Test
+  public void isPrime100() {
+    assertEquals(false, factorizer.isPrime(100));
+  }
+
 }
