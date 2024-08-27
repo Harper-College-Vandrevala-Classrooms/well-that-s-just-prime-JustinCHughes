@@ -21,6 +21,16 @@ public class TestFactorizer {
   }
 
   @Test
+  public void testTwo() {
+    assertEquals("2", factorizer.primeListGeneration(2));
+  }
+
+  @Test
+  public void testThree() {
+    assertEquals("3", factorizer.primeListGeneration(3));
+  }
+
+  @Test
   public void testSix() {
     assertEquals("3x2", factorizer.primeListGeneration(6));
   }
